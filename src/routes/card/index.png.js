@@ -31,11 +31,16 @@ export const get = async (req, _res) => {
   const splitTitle = title.split(` `)
 
   splitTitle.forEach(word => {
-    console.log('=====================')
-    console.log(word)
-    console.log('=====================')
+    let smoo = []
+    if (context.measureText(smoo.join(` `)).width < width) {
+      smoo.push(word)
+      console.log('=====================')
+      console.log(smoo)
+      console.log('=====================')
+    }
+    // context.fillText(title, 20, 150)
+    // context.fillText(title, 20, 300)
   })
-  context.fillText(title, 20, 150)
 
   // author
   context.fillStyle = '#fff'
