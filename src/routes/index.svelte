@@ -1,28 +1,5 @@
 <script>
-  import html2canvas from 'html2canvas'
-  import { onMount } from 'svelte'
-
   export let title, image, author, website
-
-  // export let width = 1200, height = 630;
-
-  // let card
-  // onMount(async () => {
-  //   await html2canvas(
-  //     document.querySelectorAll('#card-wrapper')
-  //   ).then(canvas => {
-  //     card = canvas
-  //   })
-  // })
-
-  onMount(() => {
-    let element = document.getElementsByClassName('card-wrapper')
-    html2canvas(element[0]).then(canvas => {
-      console.log('=====================')
-      console.log(canvas.toDataURL())
-      console.log('=====================')
-    })
-  })
 </script>
 
 <div class="card-wrapper">

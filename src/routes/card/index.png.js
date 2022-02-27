@@ -1,65 +1,96 @@
-// import img from '../../../static/favicon.png'
-import { createCanvas, loadImage } from 'canvas'
+import { getScreenshot } from '$lib/chromium'
+import { writeTempFile } from '$lib/file'
+import { parseReqs } from '$lib/parser'
+import { getHtml } from '$lib/template'
 
-// https://flaviocopes.com/canvas-node-generate-image/
+export async function get({ request }) {
+  try {
+    const parsedReqs = parseReqs(request)
+    const html = getHtml(parsedReqs)
 
-export const get = async (req, _res) => {
-  const searchParams = req.query
-  const title = searchParams.get('title')
-  const author = searchParams.get('author')
-  const website = searchParams.get('website')
+    const isDev = process.env.NODE_ENV === 'development'
+    const { title, author } = parsedReqs
+    const filename = [title, author].join('-')
+    const filePath = await writeTempFile(filename, html)
+    const fileUrl = `file://${filePath}`
 
-  const width = 1200
-  const height = 630
+    const file = await getScreenshot(fileUrl, isDev)
 
-  const canvas = createCanvas(width, height)
-  const context = canvas.getContext('2d')
-
-  // gradient
-  const gradient = context.createLinearGradient(0, 0, 525, 250)
-  gradient.addColorStop(0, 'rgb(102, 51, 153)')
-  gradient.addColorStop(1, 'rgb(170, 127, 212)')
-  context.fillStyle = gradient
-  context.fillRect(0, 0, width, height)
-
-  // title
-  // const title = 'Hello, World!'
-  context.font = 'bold 80pt consolas'
-  context.fillStyle = '#fff'
-  const maxWidth = canvas.width
-  const textWidth = context.measureText(title).width
-  const splitTitle = title.split(` `)
-
-  splitTitle.forEach(word => {
-    let smoo = []
-    if (context.measureText(smoo.join(` `)).width < width) {
-      smoo.push(word)
-      console.log('=====================')
-      console.log(smoo)
-      console.log('=====================')
+    return {
+      status: 200,
+      body: file,
     }
-    // context.fillText(title, 20, 150)
-    // context.fillText(title, 20, 300)
-  })
+  } catch (error) {
+    return {
+      status: 500,
+      body: {
+        error: `Big oof! Sorry, here's the error message: ${error.message}`,
+      },
+    }
+  }
+  // try {
+  //   const parsedReqs = parseReqs(req)
+  //   const html = getHtml(parsedReqs)
 
-  // author
-  context.fillStyle = '#fff'
-  context.font = 'bold 30pt consolas'
-  context.fillText(author, 100, 600)
+  //   // === Use this to get Jpeg output ===
+  //   const isDev = process.env.NOW_REGION === 'dev1'
+  //   const { title, author } = parsedReqs
+  //   const filename = [title, author].join('-')
+  //   const filePath = await writeTempFile(filename, html)
+  //   const fileUrl = `file://${filePath}`
 
-  // image
-  await loadImage('./static/favicon.png').then(image => {
-    context.drawImage(image, 20, 550, 70, 70)
-  })
+  //   const file = await getScreenshot(fileUrl, isDev)
 
-  // website
-  context.fillStyle = '#fff'
-  context.font = 'bold 30pt consolas'
-  context.fillText(website, 810, 600)
+  //   res.statusCode = 200
+  //   res.setHeader('Content-Type', 'image/jpeg')
+  //   res.setHeader(
+  //     'Cache-Control',
+  //     'public,immutable,no-transform,s-max-age=21600,max-age=21600'
+  //   )
+  //   res.end(file)
 
-  // const img = fs.readFileSync('./static/favicon.png')
-  return {
-    // headers: { 'Content-Type': 'image/png' },
-    body: canvas.toBuffer(),
+  //   // === Use this to get HTML output ===
+  //   // res.statusCode = 200
+  //   // res.setHeader('Content-Type', 'text/html')
+  //   // res.end(html)
+  // } catch (e) {
+  //   res.statusCode = 500
+  //   res.setHeader('Content-Type', 'text/html')
+  //   res.end('<h1>Internal Error</h1><p>Sorry, an error. I derp!</p>')
+  //   console.log(e)
+  // }
+}
+
+export default async function handler(req, res) {
+  try {
+    const parsedReqs = parseReqs(req)
+    const html = getHtml(parsedReqs)
+
+    // === Use this to get Jpeg output ===
+    const isDev = process.env.NOW_REGION === 'dev1'
+    const { title, author } = parsedReqs
+    const filename = [title, author].join('-')
+    const filePath = await writeTempFile(filename, html)
+    const fileUrl = `file://${filePath}`
+
+    const file = await getScreenshot(fileUrl, isDev)
+
+    res.statusCode = 200
+    res.setHeader('Content-Type', 'image/jpeg')
+    res.setHeader(
+      'Cache-Control',
+      'public,immutable,no-transform,s-max-age=21600,max-age=21600'
+    )
+    res.end(file)
+
+    // === Use this to get HTML output ===
+    // res.statusCode = 200
+    // res.setHeader('Content-Type', 'text/html')
+    // res.end(html)
+  } catch (e) {
+    res.statusCode = 500
+    res.setHeader('Content-Type', 'text/html')
+    res.end('<h1>Internal Error</h1><p>Sorry, an error. I derp!</p>')
+    console.log(e)
   }
 }
