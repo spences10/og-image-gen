@@ -1,31 +1,30 @@
-<script>
-  import html2canvas from 'html2canvas'
+<script lang="ts">
+  // import * as htmlToImage from 'html-to-image'
   import { onMount } from 'svelte'
 
-  export let title, image, author, website
+  export let title: string = 'Default title'
+  export let image: string = 'https://scottspence.com/favicon.ico'
+  export let author: string = 'Scott Spence'
+  export let website: string = 'scottspence.com'
 
-  // export let width = 1200, height = 630;
-
-  // let card
-  // onMount(async () => {
-  //   await html2canvas(
-  //     document.querySelectorAll('#card-wrapper')
-  //   ).then(canvas => {
-  //     card = canvas
-  //   })
-  // })
+  let node: HTMLElement
 
   onMount(() => {
-    let element = document.getElementsByClassName('card-wrapper')
-    html2canvas(element[0]).then(canvas => {
-      console.log('=====================')
-      console.log(canvas.toDataURL())
-      console.log('=====================')
-    })
+    // node = document.getElementById('card-wrapper')
+    // htmlToImage
+    //   .toPng(node, {})
+    //   .then(dataUrl => {
+    //     var img = new Image()
+    //     img.src = dataUrl
+    //     document.body.appendChild(img)
+    //   })
+    //   .catch(error => {
+    //     console.error('oops, something went wrong!', error)
+    //   })
   })
 </script>
 
-<div class="card-wrapper">
+<div id="card-wrapper" class="card-wrapper">
   <div class="container">
     <div class="title">{title}</div>
     <div class="author">
@@ -43,20 +42,22 @@
     --color-2: rgb(170, 127, 212);
     --background: rgb(247, 250, 252);
     --text: rgb(156, 163, 175);
+    --height: 630px;
+    --width: 1200px;
     background: linear-gradient(
       0.25turn,
       var(--color-1),
       var(--color-2)
     );
-    height: 630px;
-    width: 1200px;
+    height: var(--height);
+    width: var(--width);
     font-family: 'Space Mono', sans-serif;
     font-size: 18px;
     padding: 50px;
   }
   .container {
-    /* position: relative; */
-    /* height: calc(100vh - 100px); */
+    position: relative;
+    height: calc(var(--height) - 100px);
     padding: 50px;
     background: var(--background);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
@@ -67,31 +68,32 @@
     font-size: 5.4em;
     height: 4em;
     overflow: hidden;
-    color: var(--background);
-    word-spacing: -20px;
-    background: linear-gradient(var(--color-2), var(--color-1));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--color-1);
+    word-spacing: 5px;
+    /* https://github.com/bubkoo/html-to-image/issues/237 */
+    /* background: linear-gradient(var(--color-2), var(--color-1)); */
+    /* -webkit-background-clip: text; */
+    /* background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
   }
   .author {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    padding: 50px;
+    padding: 0px 50px 50px 50px;
     font-size: 3em;
     color: var(--text);
   }
   .author-image {
     width: 1.5em;
     border-radius: 50%;
-    margin-bottom: -9px;
+    margin-bottom: -20px;
   }
   .website {
     position: absolute;
     bottom: 0px;
     right: 0px;
-    padding: 50px;
+    padding: 0px 50px 50px 50px;
     font-size: 2em;
     color: var(--text);
   }
