@@ -1,5 +1,5 @@
 <script lang="ts">
-  // import * as htmlToImage from 'html-to-image'
+  import * as htmlToImage from 'html-to-image'
   import { onMount } from 'svelte'
 
   export let title: string = 'Default title'
@@ -10,17 +10,20 @@
   let node: HTMLElement
 
   onMount(() => {
-    // node = document.getElementById('card-wrapper')
-    // htmlToImage
-    //   .toPng(node, {})
-    //   .then(dataUrl => {
-    //     var img = new Image()
-    //     img.src = dataUrl
-    //     document.body.appendChild(img)
-    //   })
-    //   .catch(error => {
-    //     console.error('oops, something went wrong!', error)
-    //   })
+    node = document.getElementById('card-wrapper')
+    console.log('=====================')
+    console.log(node)
+    console.log('=====================')
+    htmlToImage
+      .toPng(node, {})
+      .then(dataUrl => {
+        var img = new Image()
+        img.src = dataUrl
+        document.body.appendChild(img)
+      })
+      .catch(error => {
+        console.error('oops, something went wrong!', error)
+      })
   })
 </script>
 
@@ -93,7 +96,7 @@
     position: absolute;
     bottom: 0px;
     right: 0px;
-    padding: 0px 50px 50px 50px;
+    padding: 0px 50px 60px 50px;
     font-size: 2em;
     color: var(--text);
   }
