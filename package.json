@@ -14,7 +14,7 @@
     "autoprefixer": "10.4.4",
     "canvas": "2.9.1",
     "chrome-aws-lambda": "^10.1.0",
-    "cssnano": "5.1.4",
+    "cssnano": "5.1.5",
     "html2canvas": "1.4.1",
     "postcss": "8.4.12",
     "postcss-load-config": "3.1.3",
