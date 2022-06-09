@@ -11,7 +11,7 @@ specifiers:
   postcss-load-config: 3.1.4
   prettier: 2.6.2
   prettier-plugin-svelte: 2.7.0
-  puppeteer-core: 14.1.0
+  puppeteer-core: 14.3.0
   svelte: 3.48.0
   svelte-preprocess: 4.10.7
   tailwindcss: 3.0.24
@@ -20,14 +20,14 @@ devDependencies:
   '@sveltejs/kit': 1.0.0-next.348_svelte@3.48.0
   autoprefixer: 10.4.7_postcss@8.4.14
   canvas: 2.9.1
-  chrome-aws-lambda: 10.1.0_puppeteer-core@14.1.0
+  chrome-aws-lambda: 10.1.0_puppeteer-core@14.3.0
   cssnano: 5.1.11_postcss@8.4.14
   html2canvas: 1.4.1
   postcss: 8.4.14
   postcss-load-config: 3.1.4_postcss@8.4.14
   prettier: 2.6.2
   prettier-plugin-svelte: 2.7.0_kkjbqzpydplecjtkxrgomroeru
-  puppeteer-core: 14.1.0
+  puppeteer-core: 14.3.0
   svelte: 3.48.0
   svelte-preprocess: 4.10.7_bwfybwdzwmlevsatlte2x4gwcy
   tailwindcss: 3.0.24
@@ -350,14 +350,14 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /chrome-aws-lambda/10.1.0_puppeteer-core@14.1.0:
+  /chrome-aws-lambda/10.1.0_puppeteer-core@14.3.0:
     resolution: {integrity: sha512-NZQVf+J4kqG4sVhRm3WNmOfzY0OtTSm+S8rg77pwePa9RCYHzhnzRs8YvNI6L9tALIW6RpmefWiPURt3vURXcw==}
     engines: {node: '>= 10.16'}
     peerDependencies:
       puppeteer-core: ^10.1.0
     dependencies:
       lambdafs: 2.1.1
-      puppeteer-core: 14.1.0
+      puppeteer-core: 14.3.0
     dev: true
 
   /color-name/1.1.4:
@@ -556,8 +556,8 @@ packages:
       minimist: 1.2.6
     dev: true
 
-  /devtools-protocol/0.0.982423:
-    resolution: {integrity: sha512-FnVW2nDbjGNw1uD/JRC+9U5768W7e1TfUwqbDTcSsAu1jXFjITSX8w3rkW5FEpHRMPPGpvNSmO1pOpqByiWscA==}
+  /devtools-protocol/0.0.1001819:
+    resolution: {integrity: sha512-G6OsIFnv/rDyxSqBa2lDLR6thp9oJioLsb2Gl+LbQlyoA9/OBAkrTU9jiCcQ8Pnh7z4d6slDiLaogR5hzgJLmQ==}
     dev: true
 
   /didyoumean/1.2.2:
@@ -866,7 +866,7 @@ packages:
     dev: true
 
   /fd-slicer/1.1.0:
-    resolution: {integrity: sha1-JcfInLH5B3+IkbvmHY85Dq4lbx4=}
+    resolution: {integrity: sha512-cE1qsB/VwyQozZ+q1dGxR8LBYNZeofhEdUNGSMbQD3Gw2lAzX9Zb3uIU6Ebc/Fmyjo9AWWfnn0AUCHqtevs/8g==}
     dependencies:
       pend: 1.2.0
     dev: true
@@ -1260,7 +1260,7 @@ packages:
     dev: true
 
   /once/1.4.0:
-    resolution: {integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=}
+    resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
     dependencies:
       wrappy: 1.0.2
     dev: true
@@ -1299,7 +1299,7 @@ packages:
     dev: true
 
   /pend/1.2.0:
-    resolution: {integrity: sha1-elfrVQpng/kRUzH89GY9XI4AelA=}
+    resolution: {integrity: sha512-F3asv42UuXchdzt+xXqfW1OGlVBe+mxa2mqI0pg5yAHZPvFmY3Y6drSf/GQ1A86WgWEN9Kzh/WrgKa6iGcHXLg==}
     dev: true
 
   /picocolors/1.0.0:
@@ -1690,13 +1690,13 @@ packages:
       once: 1.4.0
     dev: true
 
-  /puppeteer-core/14.1.0:
-    resolution: {integrity: sha512-vCtBIxE3qVJpmZDbMSNnXwZhB9ibMSu5J8PSgL9Nm60kC0rRonTfmywbheq0GdvYCtljNska5OAbNVLDjKSvXg==}
+  /puppeteer-core/14.3.0:
+    resolution: {integrity: sha512-84Oj29z/snMkwg2mHnWavtKUXHLUuVSaCb232btYUXxj5EBLwuq5xSVeCmS1LLuGcPfYZ39yceAuj3voyyHotQ==}
     engines: {node: '>=14.1.0'}
     dependencies:
       cross-fetch: 3.1.5
       debug: 4.3.4
-      devtools-protocol: 0.0.982423
+      devtools-protocol: 0.0.1001819
       extract-zip: 2.0.1
       https-proxy-agent: 5.0.1
       pkg-dir: 4.2.0
@@ -1705,7 +1705,7 @@ packages:
       rimraf: 3.0.2
       tar-fs: 2.1.1
       unbzip2-stream: 1.4.3
-      ws: 8.6.0
+      ws: 8.7.0
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -2131,8 +2131,8 @@ packages:
     resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=}
     dev: true
 
-  /ws/8.6.0:
-    resolution: {integrity: sha512-AzmM3aH3gk0aX7/rZLYvjdvZooofDu3fFOzGqcSnQ1tOcTWwhM/o+q++E8mAyVVIyUdajrkzWUGftaVSDLn1bw==}
+  /ws/8.7.0:
+    resolution: {integrity: sha512-c2gsP0PRwcLFzUiA8Mkr37/MI7ilIlHQxaEAtd0uNMbVMoy8puJyafRlm0bV9MbGSabUPeLrRRaqIBcFcA2Pqg==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
