@@ -11,7 +11,7 @@ specifiers:
   postcss-load-config: 3.1.4
   prettier: 2.7.0
   prettier-plugin-svelte: 2.7.0
-  puppeteer-core: 14.3.0
+  puppeteer-core: 14.4.0
   svelte: 3.48.0
   svelte-preprocess: 4.10.7
   tailwindcss: 3.1.3
@@ -20,14 +20,14 @@ devDependencies:
   '@sveltejs/kit': 1.0.0-next.350_svelte@3.48.0
   autoprefixer: 10.4.7_postcss@8.4.14
   canvas: 2.9.1
-  chrome-aws-lambda: 10.1.0_puppeteer-core@14.3.0
+  chrome-aws-lambda: 10.1.0_puppeteer-core@14.4.0
   cssnano: 5.1.11_postcss@8.4.14
   html2canvas: 1.4.1
   postcss: 8.4.14
   postcss-load-config: 3.1.4_postcss@8.4.14
   prettier: 2.7.0
   prettier-plugin-svelte: 2.7.0_hkopcrdgm3iqdwvvzss26f6wjy
-  puppeteer-core: 14.3.0
+  puppeteer-core: 14.4.0
   svelte: 3.48.0
   svelte-preprocess: 4.10.7_bwfybwdzwmlevsatlte2x4gwcy
   tailwindcss: 3.1.3
@@ -350,14 +350,14 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /chrome-aws-lambda/10.1.0_puppeteer-core@14.3.0:
+  /chrome-aws-lambda/10.1.0_puppeteer-core@14.4.0:
     resolution: {integrity: sha512-NZQVf+J4kqG4sVhRm3WNmOfzY0OtTSm+S8rg77pwePa9RCYHzhnzRs8YvNI6L9tALIW6RpmefWiPURt3vURXcw==}
     engines: {node: '>= 10.16'}
     peerDependencies:
       puppeteer-core: ^10.1.0
     dependencies:
       lambdafs: 2.1.1
-      puppeteer-core: 14.3.0
+      puppeteer-core: 14.4.0
     dev: true
 
   /color-name/1.1.4:
@@ -1707,8 +1707,8 @@ packages:
       once: 1.4.0
     dev: true
 
-  /puppeteer-core/14.3.0:
-    resolution: {integrity: sha512-84Oj29z/snMkwg2mHnWavtKUXHLUuVSaCb232btYUXxj5EBLwuq5xSVeCmS1LLuGcPfYZ39yceAuj3voyyHotQ==}
+  /puppeteer-core/14.4.0:
+    resolution: {integrity: sha512-1G+PV+dSpiGgQagDyWlz2yOEuoIsJbfiwF5jZzEr3TlvVZ16d7r3r9J4Ce5O4R1TkzPLMd9NHxk3sS0495xJ/g==}
     engines: {node: '>=14.1.0'}
     dependencies:
       cross-fetch: 3.1.5
@@ -2079,7 +2079,7 @@ packages:
     dev: true
 
   /through/2.3.8:
-    resolution: {integrity: sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=}
+    resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}
     dev: true
 
   /to-regex-range/5.0.1:
@@ -2090,7 +2090,7 @@ packages:
     dev: true
 
   /tr46/0.0.3:
-    resolution: {integrity: sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=}
+    resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
     dev: true
 
   /unbzip2-stream/1.4.3:
@@ -2135,11 +2135,11 @@ packages:
     dev: true
 
   /webidl-conversions/3.0.1:
-    resolution: {integrity: sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE=}
+    resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
     dev: true
 
   /whatwg-url/5.0.0:
-    resolution: {integrity: sha1-lmRU6HZUYuN2RNNib2dCzotwll0=}
+    resolution: {integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==}
     dependencies:
       tr46: 0.0.3
       webidl-conversions: 3.0.1
@@ -2152,7 +2152,7 @@ packages:
     dev: true
 
   /wrappy/1.0.2:
-    resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=}
+    resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
     dev: true
 
   /ws/8.7.0:
@@ -2183,7 +2183,7 @@ packages:
     dev: true
 
   /yauzl/2.10.0:
-    resolution: {integrity: sha1-x+sXyT4RLLEIb6bY5R+wZnt5pfk=}
+    resolution: {integrity: sha512-p4a9I6X6nu6IhoGmBqAcbJy1mlC4j27vEPZX9F4L4/vZT3Lyq1VkFHw/V/PUcB9Buo+DG3iHkT0x3Qya58zc3g==}
     dependencies:
       buffer-crc32: 0.2.13
       fd-slicer: 1.1.0
