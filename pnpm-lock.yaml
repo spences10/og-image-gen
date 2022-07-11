@@ -14,10 +14,10 @@ specifiers:
   puppeteer-core: 15.3.2
   svelte: 3.49.0
   svelte-preprocess: 4.10.7
-  tailwindcss: 3.1.5
+  tailwindcss: 3.1.6
 
 devDependencies:
-  '@sveltejs/kit': 1.0.0-next.367_svelte@3.49.0
+  '@sveltejs/kit': 1.0.0-next.369_svelte@3.49.0
   autoprefixer: 10.4.7_postcss@8.4.14
   canvas: 2.9.3
   chrome-aws-lambda: 10.1.0_puppeteer-core@15.3.2
@@ -30,7 +30,7 @@ devDependencies:
   puppeteer-core: 15.3.2
   svelte: 3.49.0
   svelte-preprocess: 4.10.7_v444kk5dhsdnvw4yvv6hlm5y6a
-  tailwindcss: 3.1.5
+  tailwindcss: 3.1.6
 
 packages:
 
@@ -81,8 +81,8 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.367_svelte@3.49.0:
-    resolution: {integrity: sha512-glilWol6iJEf8esQpH0HOzdI4n/xgZtoLa9U9sbg+BZelQXFRRglaGyw+ahjEreBH5MH3/bpIYAPPObQN8Pgbg==}
+  /@sveltejs/kit/1.0.0-next.369_svelte@3.49.0:
+    resolution: {integrity: sha512-7kSOz6RIehSgV+HgrkV7m9tFkA5Dey/j0sw7vXtSdgcKUCbEwG84Mbk0vH9C2FTLL/9mlEGvxS5AqQ6m/VSv8Q==}
     engines: {node: '>=16.9'}
     hasBin: true
     peerDependencies:
@@ -1220,23 +1220,6 @@ packages:
       yaml: 1.10.2
     dev: true
 
-  /postcss-load-config/4.0.1_postcss@8.4.14:
-    resolution: {integrity: sha512-vEJIc8RdiBRu3oRAI0ymerOn+7rPuMvRXslTvZUKZonDHFIczxztIyJ1urxM1x9JXEikvpWWTUUqal5j/8QgvA==}
-    engines: {node: '>= 14'}
-    peerDependencies:
-      postcss: '>=8.0.9'
-      ts-node: '>=9.0.0'
-    peerDependenciesMeta:
-      postcss:
-        optional: true
-      ts-node:
-        optional: true
-    dependencies:
-      lilconfig: 2.0.5
-      postcss: 8.4.14
-      yaml: 2.1.1
-    dev: true
-
   /postcss-merge-longhand/5.1.6_postcss@8.4.14:
     resolution: {integrity: sha512-6C/UGF/3T5OE2CEbOuX7iNO63dnvqhGZeUnKkDeifebY0XqkkvrctYSZurpNE902LDf2yKwwPFgotnfSoPhQiw==}
     engines: {node: ^10 || ^12 || >=14.0}
@@ -1807,8 +1790,8 @@ packages:
       stable: 0.1.8
     dev: true
 
-  /tailwindcss/3.1.5:
-    resolution: {integrity: sha512-bC/2dy3dGPqxMWAqFSRgQxVCfmO/31ZbeEp8s9DMDh4zgPZ5WW1gxRJkbBkXcTUIzaSUdhWrcsrSOe32ccgB4w==}
+  /tailwindcss/3.1.6:
+    resolution: {integrity: sha512-7skAOY56erZAFQssT1xkpk+kWt2NrO45kORlxFPXUt3CiGsVPhH1smuH5XoDH6sGPXLyBv+zgCKA2HWBsgCytg==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     dependencies:
@@ -1828,7 +1811,7 @@ packages:
       postcss: 8.4.14
       postcss-import: 14.1.0_postcss@8.4.14
       postcss-js: 4.0.0_postcss@8.4.14
-      postcss-load-config: 4.0.1_postcss@8.4.14
+      postcss-load-config: 3.1.4_postcss@8.4.14
       postcss-nested: 5.0.6_postcss@8.4.14
       postcss-selector-parser: 6.0.10
       postcss-value-parser: 4.2.0
@@ -1954,11 +1937,6 @@ packages:
   /yaml/1.10.2:
     resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
     engines: {node: '>= 6'}
-    dev: true
-
-  /yaml/2.1.1:
-    resolution: {integrity: sha512-o96x3OPo8GjWeSLF+wOAbrPfhFOGY0W00GNaxCDv+9hkcDJEnev1yh8S7pgHF0ik6zc8sQLuL8hjHjJULZp8bw==}
-    engines: {node: '>= 14'}
     dev: true
 
   /yauzl/2.10.0:
