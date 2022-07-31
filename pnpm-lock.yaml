@@ -14,10 +14,10 @@ specifiers:
   puppeteer-core: 15.5.0
   svelte: 3.49.0
   svelte-preprocess: 4.10.7
-  tailwindcss: 3.1.6
+  tailwindcss: 3.1.7
 
 devDependencies:
-  '@sveltejs/kit': 1.0.0-next.396_svelte@3.49.0
+  '@sveltejs/kit': 1.0.0-next.398_svelte@3.49.0
   autoprefixer: 10.4.8_postcss@8.4.14
   canvas: 2.9.3
   chrome-aws-lambda: 10.1.0_puppeteer-core@15.5.0
@@ -30,7 +30,7 @@ devDependencies:
   puppeteer-core: 15.5.0
   svelte: 3.49.0
   svelte-preprocess: 4.10.7_v444kk5dhsdnvw4yvv6hlm5y6a
-  tailwindcss: 3.1.6
+  tailwindcss: 3.1.7
 
 packages:
 
@@ -81,8 +81,8 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.396_svelte@3.49.0:
-    resolution: {integrity: sha512-bKFpuzp9QxPkOIOEIeNeedvxEMORNqBPxUmoJXDP/Se7MrSfcxYiamjBcKrG+bgGNWmV39nD3EvUox+CXno/Ig==}
+  /@sveltejs/kit/1.0.0-next.398_svelte@3.49.0:
+    resolution: {integrity: sha512-ONjHoRurnFUe+0lv0P9rZQpDuuJy4Cr/lDneoG+lkOR5/7gcvd03TlVdxLz1ZQAWPbgovm/PpshOvIUeC4n62A==}
     engines: {node: '>=16.9'}
     hasBin: true
     peerDependencies:
@@ -849,6 +849,11 @@ packages:
 
   /lilconfig/2.0.5:
     resolution: {integrity: sha512-xaYmXZtTHPAw5m+xLN8ab9C+3a8YmV3asNSPOATITbtwrfbwaLJj8h66H1WMIpALCkqsIzK3h7oQ+PdX+LQ9Eg==}
+    engines: {node: '>=10'}
+    dev: true
+
+  /lilconfig/2.0.6:
+    resolution: {integrity: sha512-9JROoBW7pobfsx+Sq2JsASvCo6Pfo6WWoUW79HuB1BCoBXD4PLWJPqDF6fNj67pqBYTbAHkE57M1kS/+L1neOg==}
     engines: {node: '>=10'}
     dev: true
 
@@ -1789,8 +1794,8 @@ packages:
       stable: 0.1.8
     dev: true
 
-  /tailwindcss/3.1.6:
-    resolution: {integrity: sha512-7skAOY56erZAFQssT1xkpk+kWt2NrO45kORlxFPXUt3CiGsVPhH1smuH5XoDH6sGPXLyBv+zgCKA2HWBsgCytg==}
+  /tailwindcss/3.1.7:
+    resolution: {integrity: sha512-r7mgumZ3k0InfVPpGWcX8X/Ut4xBfv+1O/+C73ar/m01LxGVzWvPxF/w6xIUPEztrCoz7axfx0SMdh8FH8ZvRQ==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     dependencies:
@@ -1803,7 +1808,7 @@ packages:
       fast-glob: 3.2.11
       glob-parent: 6.0.2
       is-glob: 4.0.3
-      lilconfig: 2.0.5
+      lilconfig: 2.0.6
       normalize-path: 3.0.0
       object-hash: 3.0.0
       picocolors: 1.0.0
