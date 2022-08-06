@@ -14,10 +14,10 @@ specifiers:
   puppeteer-core: 16.0.0
   svelte: 3.49.0
   svelte-preprocess: 4.10.7
-  tailwindcss: 3.1.7
+  tailwindcss: 3.1.8
 
 devDependencies:
-  '@sveltejs/kit': 1.0.0-next.402_svelte@3.49.0
+  '@sveltejs/kit': 1.0.0-next.403_svelte@3.49.0
   autoprefixer: 10.4.8_postcss@8.4.14
   canvas: 2.9.3
   chrome-aws-lambda: 10.1.0_puppeteer-core@16.0.0
@@ -30,7 +30,7 @@ devDependencies:
   puppeteer-core: 16.0.0
   svelte: 3.49.0
   svelte-preprocess: 4.10.7_v444kk5dhsdnvw4yvv6hlm5y6a
-  tailwindcss: 3.1.7
+  tailwindcss: 3.1.8
 
 packages:
 
@@ -81,8 +81,8 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.402_svelte@3.49.0:
-    resolution: {integrity: sha512-F0Mm+bTGOnl+vWKab5uwXsY+5YypC/uveGE0wKyYSE9a/pFQD20WwrvRKePGhUCepiHc7S82jxVZRwjCsToaNQ==}
+  /@sveltejs/kit/1.0.0-next.403_svelte@3.49.0:
+    resolution: {integrity: sha512-pKlmthl1SZkbx671Jp+LBoRne0vNzsjSgta9iRhqW/bt/0mx/IjlMd/NOeLuJGo30dAJdefrySoSamiaq47M/g==}
     engines: {node: '>=16.9'}
     hasBin: true
     requiresBuild: true
@@ -1795,8 +1795,8 @@ packages:
       stable: 0.1.8
     dev: true
 
-  /tailwindcss/3.1.7:
-    resolution: {integrity: sha512-r7mgumZ3k0InfVPpGWcX8X/Ut4xBfv+1O/+C73ar/m01LxGVzWvPxF/w6xIUPEztrCoz7axfx0SMdh8FH8ZvRQ==}
+  /tailwindcss/3.1.8:
+    resolution: {integrity: sha512-YSneUCZSFDYMwk+TGq8qYFdCA3yfBRdBlS7txSq0LUmzyeqRe3a8fBQzbz9M3WS/iFT4BNf/nmw9mEzrnSaC0g==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     dependencies:
