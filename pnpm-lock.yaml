@@ -11,23 +11,23 @@ specifiers:
   postcss-load-config: 3.1.4
   prettier: 2.7.1
   prettier-plugin-svelte: 2.7.0
-  puppeteer-core: 15.5.0
+  puppeteer-core: 16.0.0
   svelte: 3.49.0
   svelte-preprocess: 4.10.7
   tailwindcss: 3.1.7
 
 devDependencies:
-  '@sveltejs/kit': 1.0.0-next.398_svelte@3.49.0
+  '@sveltejs/kit': 1.0.0-next.402_svelte@3.49.0
   autoprefixer: 10.4.8_postcss@8.4.14
   canvas: 2.9.3
-  chrome-aws-lambda: 10.1.0_puppeteer-core@15.5.0
+  chrome-aws-lambda: 10.1.0_puppeteer-core@16.0.0
   cssnano: 5.1.12_postcss@8.4.14
   html2canvas: 1.4.1
   postcss: 8.4.14
   postcss-load-config: 3.1.4_postcss@8.4.14
   prettier: 2.7.1
   prettier-plugin-svelte: 2.7.0_o3ioganyptcsrh6x4hnxvjkpqi
-  puppeteer-core: 15.5.0
+  puppeteer-core: 16.0.0
   svelte: 3.49.0
   svelte-preprocess: 4.10.7_v444kk5dhsdnvw4yvv6hlm5y6a
   tailwindcss: 3.1.7
@@ -81,10 +81,11 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.398_svelte@3.49.0:
-    resolution: {integrity: sha512-ONjHoRurnFUe+0lv0P9rZQpDuuJy4Cr/lDneoG+lkOR5/7gcvd03TlVdxLz1ZQAWPbgovm/PpshOvIUeC4n62A==}
+  /@sveltejs/kit/1.0.0-next.402_svelte@3.49.0:
+    resolution: {integrity: sha512-F0Mm+bTGOnl+vWKab5uwXsY+5YypC/uveGE0wKyYSE9a/pFQD20WwrvRKePGhUCepiHc7S82jxVZRwjCsToaNQ==}
     engines: {node: '>=16.9'}
     hasBin: true
+    requiresBuild: true
     peerDependencies:
       svelte: ^3.44.0
       vite: ^3.0.0
@@ -345,14 +346,14 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /chrome-aws-lambda/10.1.0_puppeteer-core@15.5.0:
+  /chrome-aws-lambda/10.1.0_puppeteer-core@16.0.0:
     resolution: {integrity: sha512-NZQVf+J4kqG4sVhRm3WNmOfzY0OtTSm+S8rg77pwePa9RCYHzhnzRs8YvNI6L9tALIW6RpmefWiPURt3vURXcw==}
     engines: {node: '>= 10.16'}
     peerDependencies:
       puppeteer-core: ^10.1.0
     dependencies:
       lambdafs: 2.1.1
-      puppeteer-core: 15.5.0
+      puppeteer-core: 16.0.0
     dev: true
 
   /color-name/1.1.4:
@@ -1499,8 +1500,8 @@ packages:
       once: 1.4.0
     dev: true
 
-  /puppeteer-core/15.5.0:
-    resolution: {integrity: sha512-5Q8EmF++MARczJD1JcRehVePlctxGG2TFHSxdCV8NqPOk44/cMySmZw2nETn+lwUOyp0L9afosMFTnT4KgmWgw==}
+  /puppeteer-core/16.0.0:
+    resolution: {integrity: sha512-rtG8mVSh71I5sloQYSYVZM7t7Z3ern3q6uc1C8pAk7kup3k2EzrK2VMTJCWZ82c+8YbGDwkDhsB3jsmis5Rn1g==}
     engines: {node: '>=14.1.0'}
     dependencies:
       cross-fetch: 3.1.5
@@ -1514,7 +1515,7 @@ packages:
       rimraf: 3.0.2
       tar-fs: 2.1.1
       unbzip2-stream: 1.4.3
-      ws: 8.8.0
+      ws: 8.8.1
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -1927,8 +1928,8 @@ packages:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
     dev: true
 
-  /ws/8.8.0:
-    resolution: {integrity: sha512-JDAgSYQ1ksuwqfChJusw1LSJ8BizJ2e/vVu5Lxjq3YvNJNlROv1ui4i+c/kUUrPheBvQl4c5UbERhTwKa6QBJQ==}
+  /ws/8.8.1:
+    resolution: {integrity: sha512-bGy2JzvzkPowEJV++hF07hAD6niYSr0JzBNo/J29WsB57A2r7Wlc1UFcTR9IzrPvuNVO4B8LGqF8qcpsVOhJCA==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
