@@ -5,7 +5,7 @@ specifiers:
   autoprefixer: 10.4.8
   canvas: 2.9.3
   chrome-aws-lambda: 10.1.0
-  cssnano: 5.1.12
+  cssnano: 5.1.13
   html2canvas: 1.4.1
   postcss: 8.4.16
   postcss-load-config: 3.1.4
@@ -21,7 +21,7 @@ devDependencies:
   autoprefixer: 10.4.8_postcss@8.4.16
   canvas: 2.9.3
   chrome-aws-lambda: 10.1.0_puppeteer-core@16.1.0
-  cssnano: 5.1.12_postcss@8.4.16
+  cssnano: 5.1.13_postcss@8.4.16
   html2canvas: 1.4.1
   postcss: 8.4.16
   postcss-load-config: 3.1.4_postcss@8.4.16
@@ -482,14 +482,14 @@ packages:
       postcss: 8.4.16
     dev: true
 
-  /cssnano/5.1.12_postcss@8.4.16:
-    resolution: {integrity: sha512-TgvArbEZu0lk/dvg2ja+B7kYoD7BBCmn3+k58xD0qjrGHsFzXY/wKTo9M5egcUCabPol05e/PVoIu79s2JN4WQ==}
+  /cssnano/5.1.13_postcss@8.4.16:
+    resolution: {integrity: sha512-S2SL2ekdEz6w6a2epXn4CmMKU4K3KpcyXLKfAYc9UQQqJRkD/2eLUG0vJ3Db/9OvO5GuAdgXw3pFbR6abqghDQ==}
     engines: {node: ^10 || ^12 || >=14.0}
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
       cssnano-preset-default: 5.2.12_postcss@8.4.16
-      lilconfig: 2.0.5
+      lilconfig: 2.0.6
       postcss: 8.4.16
       yaml: 1.10.2
     dev: true
