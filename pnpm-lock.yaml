@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@sveltejs/kit': next
   autoprefixer: 10.4.8
-  canvas: 2.9.3
+  canvas: 2.10.0
   chrome-aws-lambda: 10.1.0
   cssnano: 5.1.13
   html2canvas: 1.4.1
@@ -17,9 +17,9 @@ specifiers:
   tailwindcss: 3.1.8
 
 devDependencies:
-  '@sveltejs/kit': 1.0.0-next.427_svelte@3.49.0
+  '@sveltejs/kit': 1.0.0-next.468_svelte@3.49.0
   autoprefixer: 10.4.8_postcss@8.4.16
-  canvas: 2.9.3
+  canvas: 2.10.0
   chrome-aws-lambda: 10.1.0_puppeteer-core@16.2.0
   cssnano: 5.1.13_postcss@8.4.16
   html2canvas: 1.4.1
@@ -85,18 +85,18 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.427_svelte@3.49.0:
-    resolution: {integrity: sha512-HUt1knOXaEM18y7E3k0CvhTxmoNhp0KbgfbLPmuRvSrQxRMsTnTpupZwW5mmU0VZkm4HHsf8mwftGy4WR8qf1Q==}
-    engines: {node: '>=16.9'}
+  /@sveltejs/kit/1.0.0-next.468_svelte@3.49.0:
+    resolution: {integrity: sha512-IH1lQfSbY4efDtV8/gtVTv1cBbp8IPTeW25BN0e/ImT6xeThiODWMKHlr+zxLDHbI3jQ70uTJMZ+pFWpk5ZOtg==}
+    engines: {node: '>=16.14'}
     hasBin: true
     requiresBuild: true
     peerDependencies:
       svelte: ^3.44.0
-      vite: ^3.0.0
+      vite: ^3.1.0-beta.1
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 1.0.1_svelte@3.49.0
+      '@sveltejs/vite-plugin-svelte': 1.0.4_svelte@3.49.0
       cookie: 0.5.0
-      devalue: 2.0.1
+      devalue: 3.1.3
       kleur: 4.1.5
       magic-string: 0.26.2
       mime: 3.0.0
@@ -112,13 +112,13 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/vite-plugin-svelte/1.0.1_svelte@3.49.0:
-    resolution: {integrity: sha512-PorCgUounn0VXcpeJu+hOweZODKmGuLHsLomwqSj+p26IwjjGffmYQfVHtiTWq+NqaUuuHWWG7vPge6UFw4Aeg==}
+  /@sveltejs/vite-plugin-svelte/1.0.4_svelte@3.49.0:
+    resolution: {integrity: sha512-UZco2fdj0OVuRWC0SUJjEOftITc2IeHLFJNp00ym9MuQ9dShnlO4P29G8KUxRlcS7kSpzHuko6eCR9MOALj7lQ==}
     engines: {node: ^14.18.0 || >= 16}
     peerDependencies:
       diff-match-patch: ^1.0.5
       svelte: ^3.44.0
-      vite: ^3.0.0
+      vite: ^3.0.0 || ^3.1.0-beta.1
     peerDependenciesMeta:
       diff-match-patch:
         optional: true
@@ -322,8 +322,8 @@ packages:
     resolution: {integrity: sha512-pJYArGHrPp3TUqQzFYRmP/lwJlj8RCbVe3Gd3eJQkAV8SAC6b19XS9BjMvRdvaS8RMkaTN8ZhoHP6S1y8zzwEQ==}
     dev: true
 
-  /canvas/2.9.3:
-    resolution: {integrity: sha512-WOUM7ghii5TV2rbhaZkh1youv/vW1/Canev6Yx6BG2W+1S07w8jKZqKkPnbiPpQEDsnJdN8ouDd7OvQEGXDcUw==}
+  /canvas/2.10.0:
+    resolution: {integrity: sha512-A0RPxLcH0pPKAY2VN243LdCNcOJXAT8n7nJnN7TZMGv9OuF8we9wfpWgVT/eFMzi+cDYf/384w4BpfjGCD9aKQ==}
     engines: {node: '>=6'}
     requiresBuild: true
     dependencies:
@@ -575,8 +575,8 @@ packages:
       minimist: 1.2.6
     dev: true
 
-  /devalue/2.0.1:
-    resolution: {integrity: sha512-I2TiqT5iWBEyB8GRfTDP0hiLZ0YeDJZ+upDxjBfOC2lebO5LezQMv7QvIUTzdb64jQyAKLf1AHADtGN+jw6v8Q==}
+  /devalue/3.1.3:
+    resolution: {integrity: sha512-9KO89Cb+qjzf2CqdrH+NuLaqdk9GhDP5EhR4zlkR51dvuIaiqtlkDkGzLMShDemwUy21raSMdu+kpX8Enw3yGQ==}
     dev: true
 
   /devtools-protocol/0.0.1019158:
