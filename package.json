@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@sveltejs/kit": "next",
-    "autoprefixer": "10.4.10",
+    "autoprefixer": "10.4.12",
     "canvas": "2.10.1",
     "chrome-aws-lambda": "10.1.0",
     "cssnano": "5.1.13",
