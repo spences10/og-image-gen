@@ -11,7 +11,7 @@ specifiers:
   postcss-load-config: 3.1.4
   prettier: 2.7.1
   prettier-plugin-svelte: 2.7.0
-  puppeteer-core: 18.0.2
+  puppeteer-core: 18.0.4
   svelte: 3.50.1
   svelte-preprocess: 4.10.7
   tailwindcss: 3.1.8
@@ -20,14 +20,14 @@ devDependencies:
   '@sveltejs/kit': 1.0.0-next.491_svelte@3.50.1
   autoprefixer: 10.4.12_postcss@8.4.16
   canvas: 2.10.1
-  chrome-aws-lambda: 10.1.0_puppeteer-core@18.0.2
+  chrome-aws-lambda: 10.1.0_puppeteer-core@18.0.4
   cssnano: 5.1.13_postcss@8.4.16
   html2canvas: 1.4.1
   postcss: 8.4.16
   postcss-load-config: 3.1.4_postcss@8.4.16
   prettier: 2.7.1
   prettier-plugin-svelte: 2.7.0_nk6d2fkgcllkkdynqbuearcure
-  puppeteer-core: 18.0.2
+  puppeteer-core: 18.0.4
   svelte: 3.50.1
   svelte-preprocess: 4.10.7_ff5mhbhkqwr6h5zvjegutqd5mq
   tailwindcss: 3.1.8_postcss@8.4.16
@@ -364,14 +364,14 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /chrome-aws-lambda/10.1.0_puppeteer-core@18.0.2:
+  /chrome-aws-lambda/10.1.0_puppeteer-core@18.0.4:
     resolution: {integrity: sha512-NZQVf+J4kqG4sVhRm3WNmOfzY0OtTSm+S8rg77pwePa9RCYHzhnzRs8YvNI6L9tALIW6RpmefWiPURt3vURXcw==}
     engines: {node: '>= 10.16'}
     peerDependencies:
       puppeteer-core: ^10.1.0
     dependencies:
       lambdafs: 2.1.1
-      puppeteer-core: 18.0.2
+      puppeteer-core: 18.0.4
     dev: true
 
   /color-name/1.1.4:
@@ -1534,8 +1534,8 @@ packages:
       once: 1.4.0
     dev: true
 
-  /puppeteer-core/18.0.2:
-    resolution: {integrity: sha512-eoFh37ktcbeChAw4d6wxcwI7oZhD1vxcAtrbPO6DJZn1HFBym1rE6DUwB3eARtnq5TZDpk7sNoOzLFLWa/9OSA==}
+  /puppeteer-core/18.0.4:
+    resolution: {integrity: sha512-dwVCjKRXZNCXMAyMCmiqWPakOJUTkZsQSo94anrSp0HEmWM16gPS7BAIp4tqGj55CFdtRJyu7OEQhaF8p96H6g==}
     engines: {node: '>=14.1.0'}
     dependencies:
       cross-fetch: 3.1.5
