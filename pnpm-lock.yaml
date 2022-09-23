@@ -11,23 +11,23 @@ specifiers:
   postcss-load-config: 3.1.4
   prettier: 2.7.1
   prettier-plugin-svelte: 2.7.0
-  puppeteer-core: 18.0.4
+  puppeteer-core: 18.0.5
   svelte: 3.50.1
   svelte-preprocess: 4.10.7
   tailwindcss: 3.1.8
 
 devDependencies:
-  '@sveltejs/kit': 1.0.0-next.491_svelte@3.50.1
+  '@sveltejs/kit': 1.0.0-next.493_svelte@3.50.1
   autoprefixer: 10.4.12_postcss@8.4.16
   canvas: 2.10.1
-  chrome-aws-lambda: 10.1.0_puppeteer-core@18.0.4
+  chrome-aws-lambda: 10.1.0_puppeteer-core@18.0.5
   cssnano: 5.1.13_postcss@8.4.16
   html2canvas: 1.4.1
   postcss: 8.4.16
   postcss-load-config: 3.1.4_postcss@8.4.16
   prettier: 2.7.1
   prettier-plugin-svelte: 2.7.0_nk6d2fkgcllkkdynqbuearcure
-  puppeteer-core: 18.0.4
+  puppeteer-core: 18.0.5
   svelte: 3.50.1
   svelte-preprocess: 4.10.7_ff5mhbhkqwr6h5zvjegutqd5mq
   tailwindcss: 3.1.8_postcss@8.4.16
@@ -85,8 +85,8 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.491_svelte@3.50.1:
-    resolution: {integrity: sha512-KO/t0OPxBWF5ZXp8RtIOVkQczo8NPHD6xqRVpSe/gZy9MmCmW/vhK2ifsENjayutyUNi7GzvrBgPyD91YHtm5g==}
+  /@sveltejs/kit/1.0.0-next.493_svelte@3.50.1:
+    resolution: {integrity: sha512-q46RfW92UBtcWoVPnFtDpaRNRmXrkbuHIePUf0sDItTbXfON29LPblK4LMqyet0ntBW519KZYCc5xH/iGEpKEw==}
     engines: {node: '>=16.14'}
     hasBin: true
     requiresBuild: true
@@ -364,14 +364,14 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /chrome-aws-lambda/10.1.0_puppeteer-core@18.0.4:
+  /chrome-aws-lambda/10.1.0_puppeteer-core@18.0.5:
     resolution: {integrity: sha512-NZQVf+J4kqG4sVhRm3WNmOfzY0OtTSm+S8rg77pwePa9RCYHzhnzRs8YvNI6L9tALIW6RpmefWiPURt3vURXcw==}
     engines: {node: '>= 10.16'}
     peerDependencies:
       puppeteer-core: ^10.1.0
     dependencies:
       lambdafs: 2.1.1
-      puppeteer-core: 18.0.4
+      puppeteer-core: 18.0.5
     dev: true
 
   /color-name/1.1.4:
@@ -1534,8 +1534,8 @@ packages:
       once: 1.4.0
     dev: true
 
-  /puppeteer-core/18.0.4:
-    resolution: {integrity: sha512-dwVCjKRXZNCXMAyMCmiqWPakOJUTkZsQSo94anrSp0HEmWM16gPS7BAIp4tqGj55CFdtRJyu7OEQhaF8p96H6g==}
+  /puppeteer-core/18.0.5:
+    resolution: {integrity: sha512-JM83vUAmWdzZfUEDTGlkSdGFq0/TiVbFjQrb6BJVeLJAWVYlkO4YvyFAaTWdCM5Kz+ovg4g7xOSAU4FRh4Cv/w==}
     engines: {node: '>=14.1.0'}
     dependencies:
       cross-fetch: 3.1.5
