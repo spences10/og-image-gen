@@ -15,8 +15,9 @@ export const GET = async ({ url }) => {
 	const title = url.searchParams.get('title') ?? undefined;
 	const author = url.searchParams.get('author') ?? undefined;
 	const website = url.searchParams.get('website') ?? undefined;
+	const img = url.searchParams.get('img') ?? undefined;
 	// @ts-ignore
-	const result = Card.render({ title, author, website });
+	const result = Card.render({ title, author, website, img });
 	/** @type {any} */
 	const markup = toReactNode(
 		`${result.html}<style>${result.css.code}</style>`

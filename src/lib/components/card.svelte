@@ -2,6 +2,7 @@
 	export let title = 'Hello, world!';
 	export let author = 'Scott Spence';
 	export let website = 'scottspence.com';
+	export let img = 'https://res.cloudinary.com/defkmsrpw/image/upload/v1578491966/social/spencee.png'
 </script>
 
 <div class="wrapper">
@@ -18,7 +19,7 @@
 	</div>
 	<img
 		class="author-image"
-		src="https://res.cloudinary.com/defkmsrpw/image/upload/v1578491966/social/spencee.png"
+		src={img}
 		alt=""
 	/>
 </div>
@@ -67,6 +68,7 @@
 		border: 4px solid white;
 		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
 			0 6px 6px rgba(0, 0, 0, 0.23);
+		background: #fff;
 	}
 	.author {
 		position: absolute;
