@@ -1,28 +1,33 @@
 {
-  "name": "og-image-gen",
-  "version": "0.0.1",
-  "type": "module",
-  "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "preview": "svelte-kit preview",
-    "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. .",
-    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
-  },
-  "devDependencies": {
-    "@sveltejs/kit": "next",
-    "autoprefixer": "10.4.12",
-    "canvas": "2.10.1",
-    "chrome-aws-lambda": "10.1.0",
-    "cssnano": "5.1.13",
-    "html2canvas": "1.4.1",
-    "postcss": "8.4.17",
-    "postcss-load-config": "4.0.1",
-    "prettier": "2.7.1",
-    "prettier-plugin-svelte": "2.8.0",
-    "puppeteer-core": "18.2.1",
-    "svelte": "3.51.0",
-    "svelte-preprocess": "4.10.7",
-    "tailwindcss": "3.1.8"
-  }
+	"name": "og-image-gen",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
+		"test": "playwright test",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"format": "prettier --plugin-search-dir . --write ."
+	},
+	"devDependencies": {
+		"@playwright/test": "^1.27.1",
+		"@resvg/resvg-js": "^2.1.0",
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/kit": "next",
+		"eslint": "^8.26.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"prettier": "^2.7.1",
+		"prettier-plugin-svelte": "^2.8.0",
+		"satori": "^0.0.43",
+		"satori-html": "^0.3.0",
+		"svelte": "^3.52.0",
+		"svelte-check": "^2.9.2",
+		"typescript": "^4.8.4",
+		"vite": "^3.1.8"
+	},
+	"type": "module"
 }
