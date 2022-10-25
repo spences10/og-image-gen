@@ -18,11 +18,11 @@ export const GET = async ({ url }) => {
 	// @ts-ignore
 	const result = Card.render({ title, author, website });
 	/** @type {any} */
-	const element = toReactNode(
+	const markup = toReactNode(
 		`${result.html}<style>${result.css.code}</style>`
 	);
 
-	const svg = await satori(element, {
+	const svg = await satori(markup, {
 		fonts: [
 			{
 				name: 'Victor Mono',
@@ -40,6 +40,7 @@ export const GET = async ({ url }) => {
 			{
 				name: 'Victor Mono',
 				data: Buffer.from(VictorMonoBoldItalic),
+				// @ts-ignore
 				weight: 'bold',
 			},
 		],
