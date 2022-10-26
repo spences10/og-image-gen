@@ -27,6 +27,7 @@
 <style>
 	.wrapper {
 		display: flex;
+		position: relative;
 		background: linear-gradient(
 			45deg,
 			rgb(102, 51, 153),
@@ -42,8 +43,8 @@
 		position: relative;
 		justify-content: center;
 		align-items: center;
-		height: 90vh;
-		width: 95vw;
+		height: 90%;
+		width: 95%;
 		padding: 50px;
 		background: white;
 		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),

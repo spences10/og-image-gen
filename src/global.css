@@ -1,0 +1,18 @@
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
