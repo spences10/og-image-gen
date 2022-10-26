@@ -24,7 +24,7 @@
 	image.
 </p>
 
-<form class="form">
+<form>
 	<label for="title">Title:</label>
 	<input type="text" name="title" id="title" bind:value={title} />
 	<label for="title">Author:</label>
@@ -75,9 +75,12 @@
 		height: 630px;
 		width: 1200px;
 	}
-	.form {
+	form {
 		display: flex;
 		flex-direction: column;
 		max-width: 50%;
+	}
+	form input {
+		margin-bottom: 10px;
 	}
 </style>
