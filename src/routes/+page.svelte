@@ -1,12 +1,46 @@
 <script>
+	import { page } from '$app/stores';
 	import Card from '$lib/components/card.svelte';
+	import { Head } from 'svead';
 	import '../global.css';
-	let title = 'Title goes here';
+	let title = 'SvelteKit Open Graph Images';
 	let author = 'Author Name';
 	let website = 'website.com';
 	let img =
 		'https://res.cloudinary.com/defkmsrpw/image/upload/v1578491966/social/spencee.png';
+
+	// This is to create the query string for the image in the head component
+	const objectToQueryParams = (
+		/** @type {{ [s: string]: any; } | ArrayLike<any>} */ obj
+	) => {
+		const params = Object.entries(obj).map(
+			([key, value]) => `${key}=${value}`
+		);
+		return '?' + params.join('&');
+	};
+
+	const ogImageUrl = (
+		/** @type {string} */ author,
+		/** @type {string} */ website,
+		/** @type {string} */ title
+	) => {
+		const params = {
+			title,
+			author,
+			website: website || `scottspence.com`,
+		};
+		return `https://ogimggen.vercel.app/og${objectToQueryParams(
+			params
+		)}`;
+	};
 </script>
+
+<Head
+	title={`SvelteKit Open Graph Images`}
+	description={`SvelteKit Open Graph Images - with satori, satori-html and @resvg/resvg-js`}
+	image={ogImageUrl(author, website, title)}
+	url={$page.url.toString()}
+/>
 
 <h1>Open Graph Images with Satori</h1>
 
