@@ -22,7 +22,7 @@
 		"eslint-plugin-svelte3": "^4.0.0",
 		"prettier": "^2.7.1",
 		"prettier-plugin-svelte": "^2.8.0",
-		"satori": "^0.0.43",
+		"satori": "^0.0.44",
 		"satori-html": "^0.3.0",
 		"svead": "^0.0.3",
 		"svelte": "^3.52.0",
