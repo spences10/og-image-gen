@@ -14,26 +14,21 @@
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.27.1",
-		"@resvg/resvg-js": "^2.1.0",
+		"@resvg/resvg-js": "^2.2.0",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
-		"eslint": "^8.26.0",
+		"eslint": "^8.29.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
-		"prettier": "^2.7.1",
-		"prettier-plugin-svelte": "^2.8.0",
-		"satori": "^0.0.43",
-		"satori-html": "^0.3.0",
-		"svead": "^0.0.3",
-		"svelte": "^3.52.0",
-		"svelte-check": "^2.9.2",
-		"typescript": "^4.8.4",
-		"vite": "^3.1.8"
+		"prettier": "^2.8.1",
+		"prettier-plugin-svelte": "^2.9.0",
+		"satori": "^0.0.44",
+		"satori-html": "^0.3.2",
+		"svead": "^0.0.4",
+		"svelte": "3.54.0",
+		"svelte-check": "2.10.2",
+		"typescript": "4.9.3",
+		"vite": "4.0.0"
 	},
-	"type": "module",
-	"pnpm": {
-		"overrides": {
-			"ultrahtml": "1.0.0-next.3"
-		}
-	}
+	"type": "module"
 }
