@@ -58,7 +58,7 @@ test.describe('meta tags', () => {
 		const metaDescription = page.locator('meta[property="og:image"]');
 		await expect(metaDescription).toHaveAttribute(
 			'content',
-			'https://ogimggen.vercel.app/og?title=SvelteKit Open Graph Images&author=Author Name&website=website.com'
+			'http://localhost:4173/og?title=SvelteKit Open Graph Images&author=Author Name&website=website.com'
 		);
 	});
 
@@ -67,7 +67,10 @@ test.describe('meta tags', () => {
 		const metaDescription = page.locator(
 			'meta[property="twitter:domain"]'
 		);
-		await expect(metaDescription).toHaveAttribute('content', '');
+		await expect(metaDescription).toHaveAttribute(
+			'content',
+			'website.com'
+		);
 	});
 
 	test('has open graph twitter url', async ({ page }) => {
@@ -107,7 +110,7 @@ test.describe('meta tags', () => {
 		);
 		await expect(metaDescription).toHaveAttribute(
 			'content',
-			'https://ogimggen.vercel.app/og?title=SvelteKit Open Graph Images&author=Author Name&website=website.com'
+			'http://localhost:4173/og?title=SvelteKit Open Graph Images&author=Author Name&website=website.com'
 		);
 	});
 });

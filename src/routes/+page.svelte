@@ -8,6 +8,7 @@
 	let website = 'website.com';
 	let img =
 		'https://res.cloudinary.com/defkmsrpw/image/upload/v1578491966/social/spencee.png';
+	let ogImgUrl = `${$page.url.toString()}og?title=${title}&author=${author}&website=${website}&img=${img}`;
 
 	// This is to create the query string for the image in the head component
 	const objectToQueryParams = (
@@ -27,11 +28,9 @@
 		const params = {
 			title,
 			author,
-			website: website || `scottspence.com`,
+			website: website || `website.com`,
 		};
-		return `https://ogimggen.vercel.app/og${objectToQueryParams(
-			params
-		)}`;
+		return `${$page.url.toString()}og${objectToQueryParams(params)}`;
 	};
 </script>
 
@@ -40,6 +39,7 @@
 	description={`SvelteKit Open Graph Images - with satori, satori-html and @resvg/resvg-js`}
 	image={ogImageUrl(author, website, title)}
 	url={$page.url.toString()}
+	{website}
 />
 
 <h1>Open Graph Images with Satori</h1>
@@ -54,7 +54,7 @@
 </p>
 
 <p>
-	You can also play around with the vriables here to generate an
+	You can also play around with the variables here to generate an
 	image.
 </p>
 
@@ -75,9 +75,15 @@
 </form>
 
 <p>
-	URL query string: <code>
-		{`/og?title=${title}&author=${author}&website=${website}&img=${img}`}
-	</code>
+	URL query string: <a
+		target="_blank"
+		rel="noopener noreferrer"
+		href={ogImgUrl}
+	>
+		<code>
+			{ogImgUrl}
+		</code>
+	</a>
 </p>
 
 <img
