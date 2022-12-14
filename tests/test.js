@@ -1,6 +1,16 @@
 import { expect, test } from '@playwright/test';
 let pageURL = 'http://localhost:4173/';
 
+let config = {
+	title: `SvelteKit Open Graph Images`,
+	description: `SvelteKit Open Graph Images - with satori, satori-html and @resvg/resvg-js`,
+	image: ``,
+	author: `Author Name`,
+	url: pageURL,
+	website: `website.com`,
+	openGraphImage: `${pageURL}og?title=SvelteKit Open Graph Images&author=Author Name&website=website.com`,
+};
+
 test('index page has expected h1', async ({ page }) => {
 	await page.goto('/');
 	expect(await page.textContent('h1')).toBe(
@@ -20,7 +30,7 @@ test.describe('meta tags', () => {
 		const metaDescription = page.locator('meta[name="description"]');
 		await expect(metaDescription).toHaveAttribute(
 			'content',
-			'SvelteKit Open Graph Images - with satori, satori-html and @resvg/resvg-js'
+			config.description
 		);
 	});
 
@@ -38,7 +48,7 @@ test.describe('meta tags', () => {
 		const metaDescription = page.locator('meta[property="og:title"]');
 		await expect(metaDescription).toHaveAttribute(
 			'content',
-			'SvelteKit Open Graph Images'
+			config.title
 		);
 	});
 
@@ -49,7 +59,7 @@ test.describe('meta tags', () => {
 		);
 		await expect(metaDescription).toHaveAttribute(
 			'content',
-			'SvelteKit Open Graph Images - with satori, satori-html and @resvg/resvg-js'
+			config.description
 		);
 	});
 
@@ -58,7 +68,7 @@ test.describe('meta tags', () => {
 		const metaDescription = page.locator('meta[property="og:image"]');
 		await expect(metaDescription).toHaveAttribute(
 			'content',
-			'http://localhost:4173/og?title=SvelteKit Open Graph Images&author=Author Name&website=website.com'
+			config.openGraphImage
 		);
 	});
 
@@ -69,7 +79,7 @@ test.describe('meta tags', () => {
 		);
 		await expect(metaDescription).toHaveAttribute(
 			'content',
-			'website.com'
+			config.website
 		);
 	});
 
@@ -88,7 +98,7 @@ test.describe('meta tags', () => {
 		);
 		await expect(metaDescription).toHaveAttribute(
 			'content',
-			'SvelteKit Open Graph Images'
+			config.title
 		);
 	});
 
@@ -99,7 +109,7 @@ test.describe('meta tags', () => {
 		);
 		await expect(metaDescription).toHaveAttribute(
 			'content',
-			'SvelteKit Open Graph Images - with satori, satori-html and @resvg/resvg-js'
+			config.description
 		);
 	});
 
@@ -110,7 +120,7 @@ test.describe('meta tags', () => {
 		);
 		await expect(metaDescription).toHaveAttribute(
 			'content',
-			'http://localhost:4173/og?title=SvelteKit Open Graph Images&author=Author Name&website=website.com'
+			config.openGraphImage
 		);
 	});
 });
