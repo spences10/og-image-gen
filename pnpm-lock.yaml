@@ -10,7 +10,7 @@ specifiers:
   eslint-plugin-svelte3: ^4.0.0
   prettier: ^2.8.1
   prettier-plugin-svelte: ^2.9.0
-  satori: ^0.0.44
+  satori: ^0.0.45
   satori-html: ^0.3.2
   svead: ^0.0.4
   svelte: 3.55.0
@@ -28,7 +28,7 @@ devDependencies:
   eslint-plugin-svelte3: 4.0.0_ffnabc34fed75fjymbd45uofx4
   prettier: 2.8.1
   prettier-plugin-svelte: 2.9.0_ajxj753sv7dbwexjherrch25ta
-  satori: 0.0.44
+  satori: 0.0.45
   satori-html: 0.3.2
   svead: 0.0.4
   svelte: 3.55.0
@@ -1443,8 +1443,8 @@ packages:
       ultrahtml: 1.2.0
     dev: true
 
-  /satori/0.0.44:
-    resolution: {integrity: sha512-WKUxXC2qeyno6J3ucwwLozPL6j1HXOZiN5wIUf7iqAhlx1RUC/6ePIKHi7iPc3Cy6DYuZcJriZXxXkSdo2FQHg==}
+  /satori/0.0.45:
+    resolution: {integrity: sha512-jF7AAK5ddZQVE6r6gTG07YxOvhldev0wBrFqBXRNbPH/mEy15gfIqA4xjGfVHczcGYZvY/VWmKri6DzRJF8cgQ==}
     engines: {node: '>=16'}
     dependencies:
       '@shuding/opentype.js': 1.4.0-beta.0
