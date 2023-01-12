@@ -10,7 +10,7 @@ specifiers:
   eslint-plugin-svelte3: ^4.0.0
   prettier: ^2.8.1
   prettier-plugin-svelte: ^2.9.0
-  satori: ^0.0.45
+  satori: ^0.1.0
   satori-html: ^0.3.2
   svead: ^0.0.4
   svelte: 3.55.0
@@ -28,7 +28,7 @@ devDependencies:
   eslint-plugin-svelte3: 4.0.0_ffnabc34fed75fjymbd45uofx4
   prettier: 2.8.1
   prettier-plugin-svelte: 2.9.0_ajxj753sv7dbwexjherrch25ta
-  satori: 0.0.45
+  satori: 0.1.0
   satori-html: 0.3.2
   svead: 0.0.4
   svelte: 3.55.0
@@ -530,10 +530,6 @@ packages:
     resolution: {integrity: sha512-BPdoIt1lfJ6B7rw35ncdwBZrAssjcwzI5LByIrYs+tpXlj/CAkuVdRsgZDdP4lq5EjyWzwxZCqAoFyHKFwp32g==}
     dependencies:
       '@types/node': 18.11.14
-    dev: true
-
-  /@types/yoga-layout/1.9.2:
-    resolution: {integrity: sha512-S9q47ByT2pPvD65IvrWp7qppVMpk9WGMbVq9wbWZOHg6tnXSD4vyhao6nOSBwwfDdV2p3Kx9evA9vI+XWTfDvw==}
     dev: true
 
   /acorn-jsx/5.3.2_acorn@8.8.1:
@@ -1443,8 +1439,8 @@ packages:
       ultrahtml: 1.2.0
     dev: true
 
-  /satori/0.0.45:
-    resolution: {integrity: sha512-jF7AAK5ddZQVE6r6gTG07YxOvhldev0wBrFqBXRNbPH/mEy15gfIqA4xjGfVHczcGYZvY/VWmKri6DzRJF8cgQ==}
+  /satori/0.1.0:
+    resolution: {integrity: sha512-U079oj1Tb8RYlo3E/eKptWZBjUxiq43Ng3IxAgUqw5wfUfNItVIAR53RRKTzjHDV9sLu0JeNifbupzxZAgp4FQ==}
     engines: {node: '>=16'}
     dependencies:
       '@shuding/opentype.js': 1.4.0-beta.0
@@ -1453,7 +1449,7 @@ packages:
       css-to-react-native: 3.0.0
       emoji-regex: 10.2.1
       postcss-value-parser: 4.2.0
-      yoga-layout-prebuilt: 1.10.0
+      yoga-wasm-web: 0.3.0
     dev: true
 
   /set-cookie-parser/2.5.1:
@@ -1758,9 +1754,6 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /yoga-layout-prebuilt/1.10.0:
-    resolution: {integrity: sha512-YnOmtSbv4MTf7RGJMK0FvZ+KD8OEe/J5BNnR0GHhD8J/XcG/Qvxgszm0Un6FTHWW4uHlTgP0IztiXQnGyIR45g==}
-    engines: {node: '>=8'}
-    dependencies:
-      '@types/yoga-layout': 1.9.2
+  /yoga-wasm-web/0.3.0:
+    resolution: {integrity: sha512-rD3L4jyMlO1m+RWU60lNwZQK5zmzglCV5fI1gTRikmpv3YzmNIZQbjyfE6cMNb9Xaly/C1SwemYGbsiOekMvnQ==}
     dev: true
