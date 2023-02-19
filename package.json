@@ -15,8 +15,8 @@
 	"devDependencies": {
 		"@playwright/test": "^1.27.1",
 		"@resvg/resvg-js": "^2.2.0",
-		"@sveltejs/adapter-auto": "next",
-		"@sveltejs/kit": "next",
+		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/kit": "^1.7.2",
 		"eslint": "^8.29.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
