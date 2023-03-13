@@ -14,7 +14,7 @@ specifiers:
   satori-html: ^0.3.2
   svead: ^0.0.4
   svelte: 3.55.1
-  svelte-check: 3.0.4
+  svelte-check: 3.1.3
   typescript: 4.9.5
   vite: 4.1.4
 
@@ -32,7 +32,7 @@ devDependencies:
   satori-html: 0.3.2
   svead: 0.0.4
   svelte: 3.55.1
-  svelte-check: 3.0.4_svelte@3.55.1
+  svelte-check: 3.1.3_svelte@3.55.1
   typescript: 4.9.5
   vite: 4.1.4
 
@@ -1548,8 +1548,8 @@ packages:
     resolution: {integrity: sha512-BrS8WAvrdUs6nbXyZN/kABjLBcPFqA1QBnbpJQiRzxfdA/8XchNJmiRmcPFTElw5NA5k7AG/eYWjj91V+8+Heg==}
     dev: true
 
-  /svelte-check/3.0.4_svelte@3.55.1:
-    resolution: {integrity: sha512-feIyBAA5cSIxq4vq6mwGvGQTHy/wBVQbs5b+/VvE21WN8X7nonAuSqwvZv0UDBowzRka3Rh4gmLPH8rPePz3/w==}
+  /svelte-check/3.1.3_svelte@3.55.1:
+    resolution: {integrity: sha512-DK+DJBD4l9Q9wgphQvSzL9hXhmHbGjq8Y0PDgVth1ewikJzHBIxu7jWuOR7SZcWkorBm3wCJzWMNtZzMyJvHBQ==}
     hasBin: true
     peerDependencies:
       svelte: ^3.55.0
