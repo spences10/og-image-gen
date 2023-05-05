@@ -10,7 +10,6 @@ import { html as toReactNode } from 'satori-html';
 const height = 630;
 const width = 1200;
 
-/** @type {import('./$types').RequestHandler} */
 export const GET = async ({ url }) => {
 	const title = url.searchParams.get('title') ?? undefined;
 	const author = url.searchParams.get('author') ?? undefined;
@@ -18,7 +17,6 @@ export const GET = async ({ url }) => {
 	const img = url.searchParams.get('img') ?? undefined;
 	// @ts-ignore
 	const result = Card.render({ title, author, website, img });
-	/** @type {any} */
 	const markup = toReactNode(
 		`${result.html}<style>${result.css.code}</style>`
 	);
@@ -29,20 +27,25 @@ export const GET = async ({ url }) => {
 				name: 'Victor Mono',
 				data: Buffer.from(VictorMono),
 				style: 'normal',
+				weight: 400,
 			},
 			{
 				name: 'Victor Mono',
 				data: Buffer.from(VictorMonoItalic),
+				style: 'italic',
+				weight: 400,
 			},
 			{
 				name: 'Victor Mono',
 				data: Buffer.from(VictorMonoBold),
+				style: 'normal',
+				weight: 700,
 			},
 			{
 				name: 'Victor Mono',
 				data: Buffer.from(VictorMonoBoldItalic),
-				// @ts-ignore
-				weight: 'bold',
+				style: 'italic',
+				weight: 700,
 			},
 		],
 		height,

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { page } from '$app/stores';
 	import Card from '$lib/components/card.svelte';
 	import { Head } from 'svead';
@@ -8,11 +8,11 @@
 	let website = 'website.com';
 	let img =
 		'https://res.cloudinary.com/defkmsrpw/image/upload/v1578491966/social/spencee.png';
-	let ogImgUrl = `${$page.url.toString()}og?title=${title}&author=${author}&website=${website}&img=${img}`;
+	$: ogImgUrl = `${$page.url.toString()}og?title=${title}&author=${author}&website=${website}&img=${img}`;
 
 	// This is to create the query string for the image in the head component
 	const objectToQueryParams = (
-		/** @type {{ [s: string]: any; } | ArrayLike<any>} */ obj
+		obj: { [s: string]: unknown } | ArrayLike<unknown>
 	) => {
 		const params = Object.entries(obj).map(
 			([key, value]) => `${key}=${value}`
@@ -21,9 +21,9 @@
 	};
 
 	const ogImageUrl = (
-		/** @type {string} */ author,
-		/** @type {string} */ website,
-		/** @type {string} */ title
+		author: string,
+		website: string,
+		title: string
 	) => {
 		const params = {
 			title,
