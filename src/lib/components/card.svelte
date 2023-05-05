@@ -1,8 +1,9 @@
-<script>
+<script lang="ts">
 	export let title = 'Hello, world!';
 	export let author = 'Scott Spence';
 	export let website = 'scottspence.com';
-	export let img = 'https://res.cloudinary.com/defkmsrpw/image/upload/v1578491966/social/spencee.png'
+	export let img =
+		'https://res.cloudinary.com/defkmsrpw/image/upload/v1578491966/social/spencee.png';
 </script>
 
 <div class="wrapper">
@@ -17,14 +18,38 @@
 			{author}
 		</div>
 	</div>
-	<img
-		class="author-image"
-		src={img}
-		alt=""
-	/>
+	<img class="author-image" src={img} alt="" />
 </div>
 
 <style>
+	@font-face {
+		font-family: 'Victor Mono';
+		src: url('$lib/fonts/VictorMono-Regular.ttf') format('truetype');
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'Victor Mono';
+		src: url('$lib/fonts/VictorMono-Italic.ttf') format('truetype');
+		font-weight: 400;
+		font-style: italic;
+	}
+
+	@font-face {
+		font-family: 'Victor Mono';
+		src: url('$lib/fonts/VictorMono-Bold.ttf') format('truetype');
+		font-weight: 700;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'Victor Mono';
+		src: url('$lib/fonts/VictorMono-BoldItalic.ttf') format('truetype');
+		font-weight: 700;
+		font-style: italic;
+	}
+
 	.wrapper {
 		display: flex;
 		position: relative;
@@ -75,7 +100,7 @@
 		position: absolute;
 		font-size: 30px;
 		font-weight: bold;
-    color: rgb(156, 163, 175);
+		color: rgb(156, 163, 175);
 		margin: 10px 20px;
 		left: 0;
 		bottom: 0;
@@ -84,7 +109,7 @@
 		position: absolute;
 		font-size: 20px;
 		font-weight: bold;
-    color: rgb(156, 163, 175);
+		color: rgb(156, 163, 175);
 		margin: 10px 20px;
 		bottom: 0;
 		right: 0;
