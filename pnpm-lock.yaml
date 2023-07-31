@@ -39,8 +39,8 @@ devDependencies:
     specifier: ^3.0.0
     version: 3.0.0(prettier@3.0.0)(svelte@4.0.0)
   satori:
-    specifier: ^0.7.3
-    version: 0.7.3
+    specifier: ^0.10.0
+    version: 0.10.1
   satori-html:
     specifier: ^0.3.2
     version: 0.3.2
@@ -1153,6 +1153,10 @@ packages:
       '@esbuild/win32-x64': 0.17.18
     dev: true
 
+  /escape-html@1.0.3:
+    resolution: {integrity: sha512-NiSupZ4OeuGwr68lGIeym/ksIZMJodUGOSCZ/FSnTxcrekbvqrgdUxlJOMpijaKZVjAJrWrGs/6Jy8OMuyj9ow==}
+    dev: true
+
   /escape-string-regexp@4.0.0:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
@@ -2003,8 +2007,8 @@ packages:
       ultrahtml: 1.2.0
     dev: true
 
-  /satori@0.7.3:
-    resolution: {integrity: sha512-EM71DU+XuX0O0b85P7qH38dQovGITS5lK81It/lXAXNjT44b7YlotFU7H0vQ+Njk0WyN/5/bdRPYYCFUKPGWfg==}
+  /satori@0.10.1:
+    resolution: {integrity: sha512-F4bTCkDp931tLb7+UCNPBuSQwXhikrUkI4fBQo6fA8lF0Evqqgg3nDyUpRktQpR5Ry1DIiIVqLyEwkAms87ykg==}
     engines: {node: '>=16'}
     dependencies:
       '@shuding/opentype.js': 1.4.0-beta.0
@@ -2012,6 +2016,7 @@ packages:
       css-box-shadow: 1.0.0-3
       css-to-react-native: 3.2.0
       emoji-regex: 10.2.1
+      escape-html: 1.0.3
       linebreak: 1.1.0
       parse-css-color: 0.2.1
       postcss-value-parser: 4.2.0
