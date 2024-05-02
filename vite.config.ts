@@ -1,5 +1,5 @@
 import { sveltekit } from '@sveltejs/kit/vite';
-import * as fs from 'fs';
+import * as fs from 'node:fs';
 import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
