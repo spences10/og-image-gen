@@ -30,7 +30,7 @@
 		"satori-html": "^0.3.2",
 		"svead": "^0.0.4",
 		"svelte": "^4.2.9",
-		"svelte-check": "^3.6.3",
+		"svelte-check": "^4.0.0",
 		"tslib": "^2.6.2",
 		"typescript": "^5.3.3",
 		"vite": "^5.0.12",
